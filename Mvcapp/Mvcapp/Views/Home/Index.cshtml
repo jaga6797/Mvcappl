@@ -1,0 +1,97 @@
+﻿
+@{
+    ViewData["Title"] = "View";
+}
+<link href="~/css/site.css" rel="stylesheet" />
+<body>
+
+    <img src ="~/images/j.jpg" class ="logo" alt="j" />
+
+     <img src ="~/MyStaticFiles/j2.jpg" alt="j2" />
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+@*<h1>Welcome to bookstore</h1>
+<h1>@DateTime.Now.ToString("dd-M-yyyy")</h1>
+<h1>Sum =@(3+5)</h1>
+
+@{
+    int a = 10;
+    int b = 20;
+    int c = a + b;
+
+}
+<h1>@c</h1>
+<h1>My email is -cjrs2577@ggamil.com</h1>
+//escape seq
+<h2>Twitter - @@jaga2577</h2>*@
+@*@{
+    int x = 10;
+    int y = 0;
+
+}
+
+@if(x == 5)
+{
+    x++;
+
+    <h1>Hi from if and value = @x</h1>
+}
+else if(x ==11)
+{
+      <h1>Hi from else if</h1>
+}
+else
+{
+     <h1>Hi from else</h1>
+}
+//ternary operator
+
+
+<h1> @(x==10 ? y=10 :y=5)</h1>
+<h2>Value of y=@y</h2>*
+
+@{
+    int a = 2;
+}
+@switch (a)
+{
+    case 1:<h1>I am 1 </h1>
+        break;
+
+         case 2:<h1>I am 2 </h1>
+        break;
+
+         case 3:<h1>I am 13</h1>
+        break;
+
+         case 4:<h1>I am 4 </h1>
+        break;
+         default:<h1>I am def </h1>
+        break;
+
+@{
+    var list = new List<int>() { 1, 2, 3, 4, 5 };
+}
+@foreach(var item in list)
+{
+    <h1>@item</h1>
+}
+
+
+
+@for (int i =0;i<10;i++)
+{
+    <h1>Hi im from for loop with index  @i</h1>
+*@
